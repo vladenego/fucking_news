@@ -16,9 +16,9 @@ export default class News extends Component {
     
   }
 
-  // componentDidMount(){
-  //   this.getNews() 
-  // }
+  componentDidMount(){
+    this.getNews() 
+  }
 
   // componentWillReceiveProps(){
   //   this.getNews() 
@@ -51,7 +51,7 @@ export default class News extends Component {
     return (
       <div>
         {console.log("this.props.switchState: " + this.props.switchState)}
-        {() => this.getNews()}
+       
          
 
          { this.state.news.map(item => {
